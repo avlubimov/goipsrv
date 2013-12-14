@@ -1,0 +1,11 @@
+service goipsrv
+     {
+       port                    = 4444
+       socket_type             = dgram
+       protocol                = udp
+       wait                    = yes
+       user                    = root
+       group                   = daemon
+       server                  = /usr/bin/goipsrv.lua
+       disable                 = no
+     }
